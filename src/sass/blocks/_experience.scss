@@ -1,0 +1,78 @@
+.experience {
+    padding-top: 126px;
+    &__title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        margin-top: 6px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__wrapper {
+        padding-left: 65px;
+        display: grid;
+        grid-template-columns: 425px 425px;
+        column-gap: 135px;
+        margin-top: 60px;
+        }
+
+        &__column {
+            h3 {
+                position: relative;
+                padding-left: 35px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background-color: $main-color;
+                    border-radius: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -7px;
+                }
+            }
+            ul {
+                list-style-type: none;
+                li {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: -9px;
+                        left: 0;
+                        width: 1px;
+                        height: 103%;
+                        background-color: black;
+                    }
+                }
+            }
+        }
+        &__item {
+            &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+            }
+            &-body {
+                padding-left: 45px;
+                margin-top: 12px;
+            }
+            &-icon {
+                position: absolute;
+                left: 0;
+                top: 26px;
+            }
+        }
+    }
+    .main-divider {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
