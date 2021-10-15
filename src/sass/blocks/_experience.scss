@@ -1,20 +1,5 @@
 .experience {
     padding-top: 126px;
-    &__title {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        @include before_circle;
-        &:before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        margin-top: 6px;
-        display: flex;
-        justify-content: center;
-    }
     
     &__wrapper {
         padding-left: 65px;
@@ -23,7 +8,6 @@
         column-gap: 135px;
         margin-top: 60px;
         }
-
         &__column {
             h3 {
                 position: relative;
@@ -50,13 +34,23 @@
                         top: -9px;
                         left: 0;
                         width: 1px;
-                        height: 103%;
+                        height: calc(100% + 9px);
                         background-color: black;
                     }
                 }
             }
         }
         &__item {
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 65px;
+                left: 0px;
+                content: '';
+                width: 44px;
+                height: 1px;
+                background-color: #000;
+            }
             &-head {
             position: relative;
             padding: 45px 0 0 100px;
@@ -67,8 +61,14 @@
             }
             &-icon {
                 position: absolute;
-                left: 0;
-                top: 26px;
+                left: 44px;
+                top: 47px;
+                @include before_circle;
+                img {
+                    position: absolute;
+                    left: 17px;
+                    top: 14px;
+                }
             }
         }
     }

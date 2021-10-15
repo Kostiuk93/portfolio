@@ -1,0 +1,12 @@
+.policy {
+    width: 1140px;
+    margin: 0 auto;
+    &__title {
+        padding: 10px 0;
+        text-align: center;
+    }
+    p { 
+        line-height: 20px;
+        margin-bottom: 2px;
+    }
+}

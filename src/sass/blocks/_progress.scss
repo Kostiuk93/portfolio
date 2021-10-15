@@ -1,0 +1,36 @@
+.progress {
+    &__block {
+        padding: 120px 0 0 0;
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        grid-template-rows: 70px auto;
+        grid-auto-rows: 70px auto;
+        gap: 45px 30px;
+        
+        &-text {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title {
+            padding-left: 13px;
+            @include before_circle;
+            &:before {
+                top: -8px;
+            }            
+        }
+        &-linebar {
+            margin-top: 27px;
+            width: 350px;
+            height: 14px;
+            border-radius: 4px;
+            background-color: #E8E4DE;
+            span {
+                display: block;
+                height: 100%;
+                border-radius: 4px;
+                background-color: $main-color;
+            }
+        }
+    }
+}

@@ -9,3 +9,9 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+// Авто расчет прогресса
+const counters = document.querySelectorAll('.progress__block-percent'),
+      lines = document.querySelectorAll('.progress__block-linebar span');
+
+console.log(counters);

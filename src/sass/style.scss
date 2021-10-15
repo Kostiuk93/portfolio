@@ -26,6 +26,7 @@ a {
     background-color: $main-color;
 }
 
+
 @import "blocks/title";
 @import "blocks/promo";
 @import "blocks/buttons";
@@ -33,3 +34,9 @@ a {
 @import 'blocks/menu';
 @import 'blocks/info';
 @import 'blocks/experience';
+@import 'blocks/skills';
+@import 'blocks/progress';
+@import 'blocks/porfolio';
+@import 'blocks/price';
+@import 'blocks/contacts';
+@import 'blocks/policy';
