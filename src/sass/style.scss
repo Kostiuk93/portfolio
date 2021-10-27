@@ -4,6 +4,7 @@
 @import "base/animations";
 @import "base/variebles";
 @import "base/mixins";
+@import 'blocks/svg-anim';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -39,4 +40,6 @@ a {
 @import 'blocks/porfolio';
 @import 'blocks/price';
 @import 'blocks/contacts';
+@import 'blocks/pageup';
 @import 'blocks/policy';
+@import 'blocks/media';

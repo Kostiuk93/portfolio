@@ -9,20 +9,24 @@
     height: 340px;
     z-index: 3;
     &__link {
+        svg path {
+            fill: $gray-color;;
+        }
         &:hover {
             svg path {
-                fill: red;
+                fill: $main-color;
             }
         }
     }
     &__divider {
         width: 2px;
         height: 70px;
-        background-color: #000;
+        background-color: $gray-color;
     }
     &__descr {
         width: 25px;
         height: 150px;
+        color: $gray-color;
         span {
             display: block;
             transform: rotate(-90deg) translate(-40%, -260%);

@@ -1,5 +1,6 @@
 .skills {
     padding: 126px 0 0 0;
+    background-color: $bg-color;   
     &__block {
         margin-top: 60px;
         padding: 0 10px;
@@ -9,6 +10,8 @@
         grid-auto-rows: 270px auto;
         gap: 13px;
         &-container {
+            display: flex;
+            justify-content: center;
             position: relative;
             padding: 30px 30px 25px 30px;
             border: #000000 solid 1px;
@@ -20,8 +23,7 @@
         &-text {
             position: absolute;
             top: 150px;
-            width: 211px;
-            height: 94px;
+            padding: 0 30px
         }
         &-img {
             position: absolute;

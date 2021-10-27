@@ -12,7 +12,7 @@
         display: block;
         width: 30px;
         height: 3px;
-        background: #151812;
+        background: $gray-color;
         z-index: 3;
         &:nth-child(2) {
             width: 36px;
@@ -90,12 +90,14 @@
             }
         }
     }
+    
     &__social {
         position: absolute;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 90px;
-        bottom: 150px;
+        bottom: 20%;
         left: 50%;
         transform: translateX(-50%);
     }

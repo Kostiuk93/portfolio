@@ -39,7 +39,8 @@
     }
     &__section-title {
         position: relative;
-        text-align: center;
+        text-align: center; 
+        z-index: 2;
         @include before_circle; 
         &:before {
             left: 50%;
@@ -49,5 +50,6 @@
     &__section-subtitle {
         text-align: center;
         margin-top: 6px;
+        z-index: 2;
     }
 }

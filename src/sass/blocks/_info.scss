@@ -1,5 +1,6 @@
 .info {
-    padding-top: 140px;
+    padding: 140px 0 126px 0;
+    background-color: aliceblue;
     &__grid-container {
         display: grid;
         grid-template-columns: 400px 640px;
@@ -10,9 +11,11 @@
     }
     &__grid-img {
         grid-row: 1/3;
-        img {
+        svg {
             width: 100%;
-            height: 600px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 75px;
         }
     }
     &__subtitle {
@@ -49,11 +52,15 @@
             padding-left: 50px;
             width: 200px;
             @include before_circle_icon;
+            &:before {
+                z-index: 0;
+            }
             &-text {
                 font-weight: 500;
                 font-size: 12px;
                 line-height: 18px;
                 margin-top: 6px;
+                z-index: 1;
             }
             svg {
                 position: absolute;
@@ -61,6 +68,9 @@
                 left: 15px;
             }
         }
+    }
+    .main-divider {
+        margin-left: 0;
     }
     
 }

@@ -1,4 +1,6 @@
 .progress {
+    background-color: $bg-color;   
+
     &__block {
         padding: 120px 0 0 0;
         display: grid;
