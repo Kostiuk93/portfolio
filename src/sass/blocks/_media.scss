@@ -1,0 +1,398 @@
+@media (max-width: 1439px) {
+    .container {
+        max-width: 960px;
+    }
+    .skills {
+        &__block {
+            grid-template-columns: repeat(auto-fit, 270px);
+            grid-auto-rows: 270px;
+            justify-content: space-between;
+        }
+    }
+    .progress {
+        &__block {
+            justify-content: space-between;            
+            grid-template-columns: repeat(2, 400px);
+            &-linebar {
+                width: 400px;
+            }
+        }
+    }
+    .portfolio  {
+        .works  {
+        grid-template-columns: repeat(auto-fit,280px);
+        justify-content: space-between;
+        gap: 20px;
+            .horizontal, .vertical {
+            grid-row: unset;
+            grid-column: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .sidepanel {
+        display: none;
+    }
+    .info {
+        &__grid {
+            &-container {
+                grid-template-columns: 300px 500px;
+            }
+        }
+    }
+    .experience {
+        &__wrapper {
+            padding-left: 50px;
+            column-gap: 38px;
+            
+        }
+        &__item {
+            &-icon {
+                @include before_circle;
+                &:before {
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .info {
+        &__grid{
+            &-container {
+                grid-template-columns: 300px 380px;
+                column-gap: 30px;}
+        }
+        &__descr {
+            width: 380px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__skill {
+            grid-template-columns: 360px;
+            grid-auto-rows:  minmax(100px, auto);
+            &-elem {
+                column-gap: 20px;
+                width: 330px;
+                padding-left: 60px;
+            }
+        }
+    }
+    .experience {
+        &__wrapper {
+            grid-template-columns: repeat(2, 340px);
+            padding-left: 0px;
+        }
+    }
+    .progress {
+        &__block {
+            grid-template-columns: repeat(2, 350px);
+            &-linebar {
+                width: 350px;
+            }
+        }
+    }
+    .price {
+        &__wrapper {
+            padding: 60px 0 0 0;
+            grid-template-columns: repeat(2,auto);
+        }
+    }
+    .contacts {
+        padding: 60px 0 0 0;
+        &__wrapper {
+            padding: 0 10px 90px 10px;
+            grid-template-columns: auto;
+        }
+        &__social {
+            grid-template-columns: repeat(3,15px);
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo {
+        &__title {
+            font-size: 29px;
+            line-height: 39px;
+            width: 300px;
+            display: inline-block;
+        }
+    }
+    .info {
+        padding: 40px 10px 0 10px;
+        &__grid {
+            &-container {
+                grid-template: auto / 1fr;
+                row-gap: 20px;
+            }
+            &-img {
+                display: none;
+            }
+        }
+        &__subtitle {
+            margin: 40px 0 0 12px;
+        }
+        .main-divider {
+            margin-top: 15px;
+        }
+        &__descr {
+            width: 540px;
+        }
+        &__skill {
+            grid-template-columns: repeat(2, 260px);
+            &-elem {
+                column-gap: 20px;
+                position: relative;
+                padding-left: 50px;
+                width: 200px;
+            }
+        }
+    }
+    .experience {
+        padding: 40px 0 0 0;
+        .title {
+            &_fz36 {
+                font-size: 30px;
+                line-height: 36px;
+                margin-top: 26px;
+            }
+        }
+        .main-divider {
+            margin-top: 20px;
+        }
+        &__wrapper {
+            margin-top: 40px;
+            grid-template-columns: auto;
+            row-gap: 40px;
+        }
+    }
+    .progress {
+        &__block {
+            grid-template-columns: 1fr;
+            padding: 48px 10px 0 10px;
+            &-linebar {
+                width: 100%;
+            }
+        }
+    }
+    .skills {
+        &__block {
+            justify-content: center;
+        }
+    }
+    .portfolio {
+        padding-top: 47px;
+        .title {
+            &_fz36 {
+                font-size: 24px;
+            }
+        }
+        .main-divider {
+            margin-top: 15px;
+        }
+        .works {
+            margin-top: 40px;
+            justify-content: center;
+        }
+    }
+    .price {
+        padding: 46px 0 0 0;
+        &__wrapper {
+            padding: 20px 10px 0 10px;
+            grid-template-columns: 300px;
+            grid-template-rows: repeat(3, auto);
+            grid-auto-rows: auto;
+            justify-content: center;
+            gap: 10px;
+            &-item {
+                grid-template-rows: 21px 36px;
+                &-text {
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0 10px 50px 10px;
+            column-gap: unset;
+        }
+        &__title {
+            padding-top: 6px;
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+        .main-divider {
+            margin: 4px 0 0 0;
+        }
+        &__text {
+            margin-top: 20px;
+        }
+        &__form {
+            grid-template-columns: auto;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__input {
+            grid-template-columns: auto;
+        }
+        &__textarea {
+            margin-top: 0;
+            grid-template-columns: auto;
+            grid-column: unset;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: auto;
+            column-gap: 35px;
+            justify-content: center;
+        }
+        &__policy {
+            grid-row: 1 / 2;
+            margin: 20px auto 0 auto;
+            input {
+            }
+        }
+        &__btn {
+            grid-row: 2 / 3;
+            width: 219px;
+            margin: 20px auto 0 auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    .promo {
+        background: url('../img/bg.svg') no-repeat 57%/cover;
+        &__subtitle {
+            width: 280px;
+            display: inline;
+            padding: 0 10px;
+        }
+        &__title {
+            padding: 0 10px;    
+        }
+        &__btns {
+            width: 280px;
+            display: inline-block;
+            padding: 0 10px;
+            margin-top: 30px;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+        &__social {
+            bottom: 25%;
+        }
+    }
+    .info {
+        padding: 46px 10px 0 10px;
+        &__subtitle {
+            margin-top: 0;
+        }
+        &__title {
+            margin-top: 26px;
+            font-size: 24px;
+            line-height: 24px;
+        }
+        &__descr {
+            width: 310px;
+        }
+        &__skill {
+            margin-top: 0;
+            grid-template-columns: 300px;
+            &-elem {
+                padding-left: 60px;
+            }
+        }
+    }
+    .experience {
+        padding: 40px 12px 0 15px;
+        .title {
+            &_fz36 {
+                font-size: 24px;
+                line-height: 36px;
+                margin-top: 26px;
+            }
+        }
+        .main-divider {
+            margin-top: 15px;
+        }
+        &__wrapper {
+            grid-template-columns: auto;
+        }
+    }
+    .skills {
+        padding-top: 42px;
+        .title {
+            &_fz36 {
+                font-size: 24px;
+            }
+        }  
+        .main-divider {
+            margin-top: 15px;
+        }
+        &__block {
+            justify-content: center;  
+            margin-top: 20px;          
+            grid-template-columns: 270px;
+            grid-auto-rows: 270px ;
+        }
+    }
+    .contacts {
+        &__policy {
+            display: grid;
+            grid-template-columns: 11px 169px;
+            column-gap: 10px;
+            align-items: center;
+            grid-row: 1 / 2;
+            margin: 20px auto 0 auto;
+        }
+    }
+    .pageUp {
+        bottom: 15px;
+        right: 5px;
+    }
+    
+}
+
+@media (max-height: 545px) {
+    .menu {
+        &__block {
+            padding-top: 10px;
+        }
+        &__close {
+            top: 15px;
+        }
+        &__social {
+            bottom: 15%;
+        }
+    }
+}
